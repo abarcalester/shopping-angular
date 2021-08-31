@@ -48,6 +48,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -87,12 +88,15 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          
           "configurations": {
             "production": {
-              "browserTarget": "Mi-Universidad-Virtual:build:production"
+              "browserTarget": "Mi-Universidad-Virtual:build:production",
+              "proxyConfig": "proxy.conf.json"
             },
             "development": {
-              "browserTarget": "Mi-Universidad-Virtual:build:development"
+              "browserTarget": "Mi-Universidad-Virtual:build:development",
+              "proxyConfig": "proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
@@ -115,9 +119,16 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/js/dist/collapse.js",
+              "node_modules/bootstrap/js/dist/dropdown.js",
+              "node_modules/bootstrap/js/dist/button.js",
+              "node_modules/bootstrap/js/dist/base-component.js",
+              "node_modules/bootstrap/js/dist/tooltip.js"
+            ]
           }
         }
       }

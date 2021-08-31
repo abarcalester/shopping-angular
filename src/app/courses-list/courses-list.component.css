@@ -1,0 +1,6 @@
+.card {
+    color: var(--text-contast-color);
+}
+a {
+    color: var(--primary-color);
+}

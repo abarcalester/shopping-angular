@@ -1,0 +1,28 @@
+.about {
+    background: var(--primary-color);
+    
+}
+
+h2 {
+    color: var(--text-contast-color);
+}
+
+.features {
+    background: var(--wrapper-light);
+    color: var(--text-contast-color);
+}
+
+.features__feature img {
+    width: 10rem;
+}
+
+.btn {
+    background: var(--primary-color);
+    color: var(--text-color);
+    font-size: 2.2rem;
+
+}
+
+.features__info {
+    background: #c2c2c2;
+}

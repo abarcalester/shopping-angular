@@ -1,0 +1,7 @@
+{
+    "/api-2.0/*": {
+        "target": "https://www.udemy.com",
+        "changeOrigin": true,
+        "secure": true
+    }
+}

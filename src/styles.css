@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic');
+
+:root {
+    --background-color: #1E1E24;
+    --primary-color: #E54B4B;
+    --secondary-color: #FF101F;
+    --text-color: rgba(255,255,255,.8);
+    --text-contast-color: rgba(0,0,0,.8);;
+    --wrapper-light: #F7EBE8;
+}
+
+html {
+    font-size: 62.5%;
+}
+*, ::before,::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Poppins', arial;
+    font-size: 1.8rem;
+}
+
+::selection {
+    background: var(--primary-color);
+    color: var(--font-color);
+}
+
+/* .container {
+    max-width: 90%;
+    margin: auto;
+} */

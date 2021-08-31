@@ -1,0 +1,11 @@
+<div class="container p-5 bg-light my-5 rounded">
+    <div class="list-group">
+        <button type="button" class="list-group-item list-group-item-action active py-3 text-uppercase h1" aria-current="true">
+            Shopping list
+        </button>
+        <button type="button" class="list-group-item list-group-item-action" *ngFor="let post of posts">{{post.title}}
+            <span>{{post.id * 25}}$</span>
+        </button>
+        <button>Total: 5875$</button>
+      </div>
+</div>
